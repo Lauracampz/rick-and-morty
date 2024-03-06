@@ -1,47 +1,35 @@
-# TypeScript Next.js example
+# README 
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+## A aplicacao
 
-## Deploy your own
+O sistema é uma aplicação web desenvolvida usando a api de Rick and Morty. Ele permite aos usuários explorarem informações sobre os personagens da série de forma interativa e responsiva. Utilizando tecnologias modernas como Next.js, TypeScript e React.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+## Premissa Assumida
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+1. Utilizei o framework Next.js para construir a aplicação web, garantindo um desenvolvimento eficiente e escalável.
+2. Utilizei a API externa do Rick and Morty para obter informações sobre os personagens, fornecendo uma base sólida de dados para minha aplicação.
+3. Utilizei TypeScript para oferecer uma tipagem estática e melhorar a robustez e manutenibilidade do código.
+4. Adotei React como minha biblioteca principal para criação de componentes, permitindo uma construção modular e reutilizável da interface do usuário.
+5. Garanti a responsividade da aplicação para proporcionar uma experiência consistente em uma variedade de dispositivos.
+6. Utilizei estilos CSS-in-JS com o módulo styled-jsx para estilizar os componentes de forma encapsulada e organizada.
+7. Estruturei a aplicação em componentes reutilizáveis, facilitando a manutenção e a escalabilidade do código ao longo do tempo.
+8. Tentei seguir um layout básico fornecido para orientar o desenvolvimento da interface, mantendo a consistência visual.
+   
+## Decisões de Projeto
 
-## How to use it?
+1. *Componentização*: Optei por dividir a aplicação em componentes reutilizáveis, como Card, Features e SearchBar, para promover uma arquitetura mais modular e organizada, facilitando a manutenção e a extensibilidade do código.
+2. *Utilização de Hooks*: Utilizei Hooks do React, como useState e useEffect, para gerenciar o estado da aplicação de forma eficiente e lidar com efeitos colaterais de forma simples e declarativa.
+3. *Responsividade*: A aplicação foi projetada para ser responsiva, adaptando de forma diferentes em dispositivos,garantindo uma experiência de usuário consistente.
+4. *Estilização CSS-in-JS*: Optei por utilizar o módulo styled-jsx para estilização dos componentes, mantendo os estilos encapsulados e garantindo uma melhor organização do código, além de facilitar a manutenção e o reuso dos estilos.
+5. *Paginação*: Implementei a funcionalidade de paginação para carregar mais personagens à medida que o usuário navega pelas páginas, proporcionando uma experiência de usuário mais eficiente.
+6. *Detalhes do Personagem*: Criei uma página específica para exibir detalhes de cada personagem, incluindo informações como nome, status, gênero, origem e localização, fornecendo uma visão mais completa e dos personagens.
+7. *Tratamento de erros*: Implementei tratamento de erros para lidar com falhas na obtenção de dados da API, garantindo uma experiência de usuário mais confiável, mesmo em condições adversas.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Instruções para Executar o Sistema
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-```
-
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
-
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+1. Clone o repositório para sua máquina local.
+2. Certifique-se de ter o Node.js e o npm instalados em seu ambiente de desenvolvimento.
+3. Va até o diretório do projeto e execute `npm install` para instalar as dependências.
+4. Após a instalação das dependências, execute `npm run dev` para iniciar o servidor de desenvolvimento.
+5. Abra seu navegador e acesse `http://localhost:3000` para visualizar a aplicação em funcionamento.
+6. Você pode navegar entre as páginas e utilizar a funcionalidade de busca para encontrar personagens específicos.
